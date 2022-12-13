@@ -4,18 +4,37 @@ using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 public class XROffsetGrabInteractable : XRGrabInteractable
 {
+
+    private Vector3 initialLocalPos;
+    private Quaternion initialLocalRot;
     // Start is called before the first frame update
     void Start()
     {
-        GameObject attachPoint = new GameObject("Offset Grab Pivot");
-        attachPoint.transform.SetParent(transform, false);
-        attachTransform = attachPoint.transform;
+        if (!attachTransform)
+        {
+            GameObject attachPoint = new GameObject("Offset Grab Pivot");
+            attachPoint.transform.SetParent(transform, false);
+            attachTransform = attachPoint.transform;
+        }
+        else
+        {
+            initialLocalPos = attachTransform.localPosition;
+            initialLocalRot = attachTransform.localRotation;
+        }
     }
 
     protected override void OnSelectEntered(SelectEnterEventArgs args)
     {
-        attachTransform.position = args.interactableObject.transform.position;
-        attachTransform.rotation = args.interactableObject.transform.rotation;
+        if(args.interactableObject is XRDirectInteractor)
+        {
+            attachTransform.position = args.interactableObject.transform.position;
+            attachTransform.rotation = args.interactableObject.transform.rotation;
+        }
+        else
+        {
+            attachTransform.localPosition = initialLocalPos;
+            attachTransform.localRotation = initialLocalRot;
+        }
         base.OnSelectEntered(args);
     }
 }
