@@ -7736,7 +7736,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: daa45645941372b4187b6529494a108b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1384310047}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
