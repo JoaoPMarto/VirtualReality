@@ -13602,7 +13602,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Timeout: 10
-  m_XROrigin: {fileID: 0}
+  m_XROrigin: {fileID: 1018790047}
 --- !u!114 &1018790050
 MonoBehaviour:
   m_ObjectHideFlags: 0
