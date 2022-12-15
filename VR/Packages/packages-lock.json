@@ -221,7 +221,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.xr.picoxr": {
-      "version": "file:C:/Users/Guidzo/Desktop/VR/projeto/VirtualReality/PicoXR_Platform_SDK-1.2.4_B72",
+      "version": "file:C:/Users/JoaoM/Desktop/Faculdade/Mestrado/Ano2/Parte2/RV/Project/VirtualReality/PicoXR_Platform_SDK-1.2.4_B72",
       "depth": 0,
       "source": "local",
       "dependencies": {
