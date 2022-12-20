@@ -6,14 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/v2.unity
-    guid: b9551ee99d971a349a1b896e8f7c3fbb
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
-    path: Assets/versao.unity
-    guid: 234f80db87ff56a4289fd0474eb16c77
-  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
     path: Assets/v4.unity
     guid: 8e374e80128f65642be59277dd311d8b
+  - enabled: 1
+    path: Assets/teste2.unity
+    guid: c61caafa7ca361745a8c2678768b9ca2
   m_configObjects:
     Unity.XR.PXR.Settings: {fileID: 11400000, guid: 56301a712844263468ba277921d7f0a4, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 85bfd28961ed42a43bf3d06f7de0254d, type: 2}

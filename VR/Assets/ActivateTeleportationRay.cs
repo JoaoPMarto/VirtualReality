@@ -20,11 +20,27 @@ public class ActivateTeleportationRay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        leftTeleportation.SetActive(leftActivate.action.ReadValue<float>() > 0.1f);
-        rightTeleportation.SetActive(rightActivate.action.ReadValue<float>() > 0.1f);
-        leftController.SetActive(leftActivate.action.ReadValue<float>() <= 0.1f);
-        rightController.SetActive(leftActivate.action.ReadValue<float>() <= 0.1f);
+        if(leftActivate.action.ReadValue<float>() <= 0.1f){
+            leftTeleportation.SetActive(false);
+            leftController.SetActive(true);
+        }
         
+        if(leftActivate.action.ReadValue<float>() > 0.1f){
+            leftTeleportation.SetActive(true);
+            leftController.SetActive(false);
+        }
+
+        if(rightActivate.action.ReadValue<float>() <= 0.1f){
+            rightTeleportation.SetActive(false);
+            rightController.SetActive(true);
+        }
+        
+        if(rightActivate.action.ReadValue<float>() > 0.1f){
+            rightTeleportation.SetActive(true);
+            rightController.SetActive(false);
+        }
+
+
         
     }
 }
