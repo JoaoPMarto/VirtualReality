@@ -11,6 +11,7 @@ public class XROffsetGrabInteractable : XRGrabInteractable
     public GameObject leftController;
     public GameObject rightController;
 
+    public GameObject Cylinder;
 
     // Start is called before the first frame update
     void Start()
@@ -34,7 +35,6 @@ public class XROffsetGrabInteractable : XRGrabInteractable
         {
             attachTransform.position = args.interactableObject.transform.position;
             attachTransform.rotation = args.interactableObject.transform.rotation;
-            
         }
         else
         {
@@ -42,6 +42,9 @@ public class XROffsetGrabInteractable : XRGrabInteractable
             attachTransform.localRotation = initialLocalRot;
             leftController.GetComponent<XRInteractorLineVisual>().enabled=false;
             rightController.GetComponent<XRInteractorLineVisual>().enabled=false;
+            transform.localScale = new Vector3(0.4f, 0.4f, 0.4f);
+            Cylinder.GetComponent<CylinderSelector>().resetColliders();
+            Cylinder.SetActive(false);
         }
         base.OnSelectEntered(args);
     }
@@ -50,6 +53,9 @@ public class XROffsetGrabInteractable : XRGrabInteractable
     {
         leftController.GetComponent<XRInteractorLineVisual>().enabled=true;
         rightController.GetComponent<XRInteractorLineVisual>().enabled=true;
+        transform.localScale = new Vector3(0.4f, 0.4f, 0.4f);
+        Cylinder.GetComponent<CylinderSelector>().resetColliders();
+        Cylinder.SetActive(true);
         base.OnSelectExiting(args);
     }
 }
