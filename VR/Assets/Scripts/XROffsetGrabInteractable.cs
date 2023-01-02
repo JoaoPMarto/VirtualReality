@@ -7,6 +7,11 @@ public class XROffsetGrabInteractable : XRGrabInteractable
 
     private Vector3 initialLocalPos;
     private Quaternion initialLocalRot;
+
+    public GameObject leftController;
+    public GameObject rightController;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,12 +34,22 @@ public class XROffsetGrabInteractable : XRGrabInteractable
         {
             attachTransform.position = args.interactableObject.transform.position;
             attachTransform.rotation = args.interactableObject.transform.rotation;
+            
         }
         else
         {
             attachTransform.localPosition = initialLocalPos;
             attachTransform.localRotation = initialLocalRot;
+            leftController.GetComponent<XRInteractorLineVisual>().enabled=false;
+            rightController.GetComponent<XRInteractorLineVisual>().enabled=false;
         }
         base.OnSelectEntered(args);
+    }
+
+    protected override void OnSelectExiting(SelectExitEventArgs args)
+    {
+        leftController.GetComponent<XRInteractorLineVisual>().enabled=true;
+        rightController.GetComponent<XRInteractorLineVisual>().enabled=true;
+        base.OnSelectExiting(args);
     }
 }
