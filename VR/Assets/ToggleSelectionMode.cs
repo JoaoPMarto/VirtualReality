@@ -13,6 +13,8 @@ public class ToggleSelectionMode : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        rightHand.SetActive(true);
+        bubble.SetActive(false);
         toggleReference.action.started += toggleBubble;
     }
 
