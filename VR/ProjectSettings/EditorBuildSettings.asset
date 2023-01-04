@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/testePhysics.unity
     guid: c2728e0d2c1ffcd4d98d9d1ff1436141
+  - enabled: 0
+    path: Assets/vSound.unity
+    guid: 86f1e7f1bb40e5a42a5003471ed23430
   m_configObjects:
     Unity.XR.PXR.Settings: {fileID: 11400000, guid: 56301a712844263468ba277921d7f0a4, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 85bfd28961ed42a43bf3d06f7de0254d, type: 2}
