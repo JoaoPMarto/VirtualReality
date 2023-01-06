@@ -19,7 +19,7 @@ public class ToggleSelectionMode : MonoBehaviour
     {
         rightHand.SetActive(true);
         rightHandModel.SetActive(true);
-        bubble.SetActive(false);
+        cylinder.SetActive(false);
         bubbleModel.SetActive(false);
         toggleReference.action.started += toggleBubble;
     }
@@ -32,12 +32,12 @@ public class ToggleSelectionMode : MonoBehaviour
         rightHand.SetActive(!rightHand.activeSelf);
         rightHandModel.SetActive(!rightHandModel.activeSelf);
 
-        if (bubble.activeSelf)
+        if (cylinder.activeSelf)
         {
             cylinder.GetComponent<CylinderSelector>().resetColliders();
         }
 
-        bubble.SetActive(!bubble.activeSelf);
+        cylinder.SetActive(!cylinder.activeSelf);
         bubbleModel.SetActive(!bubbleModel.activeSelf);
     }
 

@@ -21,7 +21,6 @@ public class CylinderSelector : MonoBehaviour
     public void OnTriggerExit(Collider other)
     {
         activeColliders.Remove(other);
-
         Debug.Log(other.gameObject.name + "Exited");
     }
 
@@ -63,7 +62,22 @@ public class CylinderSelector : MonoBehaviour
 
     public void resetColliders()
     {
+        foreach (var collider in activeColliders)
+        {
+            if (collider != null)
+            {
+                if(collider.gameObject.tag == "balls" || collider.gameObject.name == "Bottle Energy Drink A" || collider.gameObject.name == "Bottle Energy Drink B" ||
+                    collider.gameObject.name == "Bottle Energy Drink A (1)" || collider.gameObject.name == "Bottle Energy Drink A (2)" ||
+                    collider.gameObject.name == "Bottle Energy Drink A (3)" || collider.gameObject.name == "Bottle Energy Drink B (1)" ||
+                    collider.gameObject.name == "Bottle Energy Drink B (2)" || collider.gameObject.name == "Bottle Energy Drink B (3)") {
+                    collider.transform.localScale = Vector3.one * 0.4f;
+                }
+            }
+        }
         activeColliders.Clear();
-        selected = null;
+        if (selected != null)
+        {
+            selected.transform.localScale = Vector3.one * 0.4f;
+        }
     }
 }
