@@ -43,8 +43,6 @@ public class XROffsetGrabInteractable : XRGrabInteractable
             leftController.GetComponent<XRInteractorLineVisual>().enabled=false;
             rightController.GetComponent<XRInteractorLineVisual>().enabled=false;
             transform.localScale = new Vector3(0.4f, 0.4f, 0.4f);
-            Cylinder.GetComponent<CylinderSelector>().resetColliders();
-            Cylinder.SetActive(false);
         }
         base.OnSelectEntered(args);
     }
@@ -54,8 +52,6 @@ public class XROffsetGrabInteractable : XRGrabInteractable
         leftController.GetComponent<XRInteractorLineVisual>().enabled=true;
         rightController.GetComponent<XRInteractorLineVisual>().enabled=true;
         transform.localScale = new Vector3(0.4f, 0.4f, 0.4f);
-        Cylinder.GetComponent<CylinderSelector>().resetColliders();
-        Cylinder.SetActive(true);
         base.OnSelectExiting(args);
     }
 }
