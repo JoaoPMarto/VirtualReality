@@ -9,46 +9,44 @@ public class ToggleSelectionMode : MonoBehaviour
     public InputActionReference toggleReference;
 
     public GameObject rightHand;
-    public GameObject rightHandModel;
     public GameObject bubble;
-    public GameObject bubbleModel;
-    public GameObject cylinder;
 
-    // Start is called before the first frame update
-    void Start()
+    public bool isDirect = false;
+
+    private void OnEnable()
     {
-        rightHand.SetActive(true);
-        rightHandModel.SetActive(true);
-        cylinder.SetActive(false);
-        bubbleModel.SetActive(false);
         toggleReference.action.started += toggleBubble;
+    }
+
+    private void OnDisable()
+    {
+        toggleReference.action.started -= toggleBubble;
+    }
+
+    private void setComponents()
+    {
+        // Set all components in the controller objects to enabled/disabled
+        foreach (var component in rightHand.GetComponents<Behaviour>())
+            component.enabled = !isDirect;
+        foreach (var component in bubble.GetComponents<Behaviour>())
+            component.enabled = isDirect;
+
+        // Enable/disable all their children
+        foreach (Transform t in rightHand.transform)
+            t.gameObject.SetActive(!isDirect);
+        foreach (Transform t in bubble.transform)
+            t.gameObject.SetActive(isDirect);
+
     }
 
     private void toggleBubble(InputAction.CallbackContext context)
     {
-        rightHand.GetComponent<LineRenderer>().enabled = !rightHand.GetComponent<LineRenderer>().enabled;
-        rightHand.GetComponent<XRInteractorLineVisual>().enabled = !rightHand.GetComponent<XRInteractorLineVisual>().enabled;
-        rightHand.GetComponent<XRRayInteractor>().enabled = !rightHand.GetComponent<XRRayInteractor>().enabled;
-        rightHand.SetActive(!rightHand.activeSelf);
-        rightHandModel.SetActive(!rightHandModel.activeSelf);
-
-        if (cylinder.activeSelf)
-        {
-            cylinder.GetComponent<CylinderSelector>().resetColliders();
-        }
-
-        cylinder.SetActive(!cylinder.activeSelf);
-        bubbleModel.SetActive(!bubbleModel.activeSelf);
+        isDirect = !isDirect;
+        setComponents();
     }
 
-    // Update is called once per frame
-    void Update()
+    void Start()
     {
-        
-    }
-
-    private void OnDestroy()
-    {
-        toggleReference.action.started -= toggleBubble;
+        setComponents();
     }
 }
