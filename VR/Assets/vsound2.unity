@@ -444,9 +444,15 @@ MonoBehaviour:
   groundClip: {fileID: 8300000, guid: 5a9a17495265575428aa3967edbfc3c9, type: 3}
   rimClip: {fileID: 8300000, guid: 16755e6e0e6cb5e4bb0a536bf157efd7, type: 3}
   boardClip: {fileID: 8300000, guid: 398e862009cfc064c954ef3c40b542b8, type: 3}
+  scoreClip: {fileID: 8300000, guid: 9d3a4daeee50bed4bb6281f8df1949dd, type: 3}
+  netClip: {fileID: 8300000, guid: 6a2b69fe27927f240ad6308e221d1f13, type: 3}
   groundTag: ground
   rimTag: rim
   boardTag: board
+  scoreTag: score
+  netTag: net
+  leftController: {fileID: 359612164}
+  rightController: {fileID: 816858896}
   useVelocity: 1
   minVelocity: 0
   maxVelocity: 2
@@ -1705,7 +1711,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1830059992}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
 --- !u!64 &51207518
 MeshCollider:
@@ -1788,7 +1794,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8044372787967921766, guid: 4ed2ea3222e444fa903cc0ee5de73365, type: 3}
       propertyPath: m_RootOrder
-      value: 54
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 8044372787967921766, guid: 4ed2ea3222e444fa903cc0ee5de73365, type: 3}
       propertyPath: m_LocalScale.x
@@ -2371,6 +2377,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 2539812522170571808, guid: b77f56de337d4668a5ac60bc43bb8c76, type: 3}
+    - target: {fileID: 2489294564274531179, guid: 6d205eb65fb446e6b2ac66174454a52e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: b77f56de337d4668a5ac60bc43bb8c76, type: 3}
     - target: {fileID: 3657183391636983812, guid: 6d205eb65fb446e6b2ac66174454a52e, type: 3}
       propertyPath: m_RootOrder
       value: 53
@@ -2660,9 +2670,15 @@ MonoBehaviour:
   groundClip: {fileID: 8300000, guid: 5a9a17495265575428aa3967edbfc3c9, type: 3}
   rimClip: {fileID: 8300000, guid: 16755e6e0e6cb5e4bb0a536bf157efd7, type: 3}
   boardClip: {fileID: 8300000, guid: 398e862009cfc064c954ef3c40b542b8, type: 3}
+  scoreClip: {fileID: 8300000, guid: 9d3a4daeee50bed4bb6281f8df1949dd, type: 3}
+  netClip: {fileID: 8300000, guid: 6a2b69fe27927f240ad6308e221d1f13, type: 3}
   groundTag: ground
   rimTag: rim
   boardTag: board
+  scoreTag: score
+  netTag: net
+  leftController: {fileID: 359612164}
+  rightController: {fileID: 816858896}
   useVelocity: 1
   minVelocity: 0
   maxVelocity: 2
@@ -2957,9 +2973,15 @@ MonoBehaviour:
   groundClip: {fileID: 8300000, guid: 5a9a17495265575428aa3967edbfc3c9, type: 3}
   rimClip: {fileID: 8300000, guid: 16755e6e0e6cb5e4bb0a536bf157efd7, type: 3}
   boardClip: {fileID: 8300000, guid: 398e862009cfc064c954ef3c40b542b8, type: 3}
+  scoreClip: {fileID: 8300000, guid: 9d3a4daeee50bed4bb6281f8df1949dd, type: 3}
+  netClip: {fileID: 8300000, guid: 6a2b69fe27927f240ad6308e221d1f13, type: 3}
   groundTag: ground
   rimTag: rim
   boardTag: board
+  scoreTag: score
+  netTag: net
+  leftController: {fileID: 359612164}
+  rightController: {fileID: 816858896}
   useVelocity: 1
   minVelocity: 0
   maxVelocity: 2
@@ -3436,9 +3458,15 @@ MonoBehaviour:
   groundClip: {fileID: 8300000, guid: 5a9a17495265575428aa3967edbfc3c9, type: 3}
   rimClip: {fileID: 8300000, guid: 16755e6e0e6cb5e4bb0a536bf157efd7, type: 3}
   boardClip: {fileID: 8300000, guid: 398e862009cfc064c954ef3c40b542b8, type: 3}
+  scoreClip: {fileID: 8300000, guid: 9d3a4daeee50bed4bb6281f8df1949dd, type: 3}
+  netClip: {fileID: 8300000, guid: 6a2b69fe27927f240ad6308e221d1f13, type: 3}
   groundTag: ground
   rimTag: rim
   boardTag: board
+  scoreTag: score
+  netTag: net
+  leftController: {fileID: 359612164}
+  rightController: {fileID: 816858896}
   useVelocity: 1
   minVelocity: 0
   maxVelocity: 2
@@ -4847,9 +4875,15 @@ MonoBehaviour:
   groundClip: {fileID: 8300000, guid: 5a9a17495265575428aa3967edbfc3c9, type: 3}
   rimClip: {fileID: 8300000, guid: 16755e6e0e6cb5e4bb0a536bf157efd7, type: 3}
   boardClip: {fileID: 8300000, guid: 398e862009cfc064c954ef3c40b542b8, type: 3}
+  scoreClip: {fileID: 8300000, guid: 9d3a4daeee50bed4bb6281f8df1949dd, type: 3}
+  netClip: {fileID: 8300000, guid: 6a2b69fe27927f240ad6308e221d1f13, type: 3}
   groundTag: ground
   rimTag: rim
   boardTag: board
+  scoreTag: score
+  netTag: net
+  leftController: {fileID: 359612164}
+  rightController: {fileID: 816858896}
   useVelocity: 1
   minVelocity: 0
   maxVelocity: 2
@@ -5577,7 +5611,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8044372787967921766, guid: 4ed2ea3222e444fa903cc0ee5de73365, type: 3}
       propertyPath: m_RootOrder
-      value: 48
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8044372787967921766, guid: 4ed2ea3222e444fa903cc0ee5de73365, type: 3}
       propertyPath: m_LocalScale.x
@@ -6125,6 +6159,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3019200396687833967, guid: c724e9b1a25941bc8d54fe5b17b4a1ba, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: b77f56de337d4668a5ac60bc43bb8c76, type: 3}
     - target: {fileID: 3667802236834306746, guid: c724e9b1a25941bc8d54fe5b17b4a1ba, type: 3}
       propertyPath: m_Name
       value: Bottle Energy Drink A (6)
@@ -6203,6 +6241,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 2539812522170571808, guid: b77f56de337d4668a5ac60bc43bb8c76, type: 3}
+    - target: {fileID: 2489294564274531179, guid: 6d205eb65fb446e6b2ac66174454a52e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: b77f56de337d4668a5ac60bc43bb8c76, type: 3}
     - target: {fileID: 3657183391636983812, guid: 6d205eb65fb446e6b2ac66174454a52e, type: 3}
       propertyPath: m_RootOrder
       value: 57
@@ -6744,9 +6786,15 @@ MonoBehaviour:
   groundClip: {fileID: 8300000, guid: 5a9a17495265575428aa3967edbfc3c9, type: 3}
   rimClip: {fileID: 8300000, guid: 16755e6e0e6cb5e4bb0a536bf157efd7, type: 3}
   boardClip: {fileID: 8300000, guid: 398e862009cfc064c954ef3c40b542b8, type: 3}
+  scoreClip: {fileID: 8300000, guid: 9d3a4daeee50bed4bb6281f8df1949dd, type: 3}
+  netClip: {fileID: 8300000, guid: 6a2b69fe27927f240ad6308e221d1f13, type: 3}
   groundTag: ground
   rimTag: rim
   boardTag: board
+  scoreTag: score
+  netTag: net
+  leftController: {fileID: 359612164}
+  rightController: {fileID: 816858896}
   useVelocity: 1
   minVelocity: 0
   maxVelocity: 2
@@ -6935,6 +6983,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3019200396687833967, guid: c724e9b1a25941bc8d54fe5b17b4a1ba, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: b77f56de337d4668a5ac60bc43bb8c76, type: 3}
     - target: {fileID: 3667802236834306746, guid: c724e9b1a25941bc8d54fe5b17b4a1ba, type: 3}
       propertyPath: m_Name
       value: Bottle Energy Drink A (2)
@@ -7295,9 +7347,15 @@ MonoBehaviour:
   groundClip: {fileID: 8300000, guid: 5a9a17495265575428aa3967edbfc3c9, type: 3}
   rimClip: {fileID: 8300000, guid: 16755e6e0e6cb5e4bb0a536bf157efd7, type: 3}
   boardClip: {fileID: 8300000, guid: 398e862009cfc064c954ef3c40b542b8, type: 3}
+  scoreClip: {fileID: 8300000, guid: 9d3a4daeee50bed4bb6281f8df1949dd, type: 3}
+  netClip: {fileID: 8300000, guid: 6a2b69fe27927f240ad6308e221d1f13, type: 3}
   groundTag: ground
   rimTag: rim
   boardTag: board
+  scoreTag: score
+  netTag: net
+  leftController: {fileID: 359612164}
+  rightController: {fileID: 816858896}
   useVelocity: 1
   minVelocity: 0
   maxVelocity: 2
@@ -7919,7 +7977,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6132546552954140554, guid: 7f9f4a75f0ac4646a3f171d8596570f7, type: 3}
       propertyPath: m_RootOrder
-      value: 46
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 6132546552954140554, guid: 7f9f4a75f0ac4646a3f171d8596570f7, type: 3}
       propertyPath: m_LocalScale.x
@@ -8796,9 +8854,15 @@ MonoBehaviour:
   groundClip: {fileID: 8300000, guid: 5a9a17495265575428aa3967edbfc3c9, type: 3}
   rimClip: {fileID: 8300000, guid: 16755e6e0e6cb5e4bb0a536bf157efd7, type: 3}
   boardClip: {fileID: 8300000, guid: 398e862009cfc064c954ef3c40b542b8, type: 3}
+  scoreClip: {fileID: 8300000, guid: 9d3a4daeee50bed4bb6281f8df1949dd, type: 3}
+  netClip: {fileID: 8300000, guid: 6a2b69fe27927f240ad6308e221d1f13, type: 3}
   groundTag: ground
   rimTag: rim
   boardTag: board
+  scoreTag: score
+  netTag: net
+  leftController: {fileID: 359612164}
+  rightController: {fileID: 816858896}
   useVelocity: 1
   minVelocity: 0
   maxVelocity: 2
@@ -9259,7 +9323,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6968120330087252607, guid: 57eefa523cc14133805804e68c78ab86, type: 3}
       propertyPath: m_RootOrder
-      value: 50
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 6968120330087252607, guid: 57eefa523cc14133805804e68c78ab86, type: 3}
       propertyPath: m_LocalScale.y
@@ -11507,7 +11571,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 87062987488536273, guid: 94d9a1cd8c62437f8e1babdedeafcf02, type: 3}
       propertyPath: m_RootOrder
-      value: 58
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 87062987488536273, guid: 94d9a1cd8c62437f8e1babdedeafcf02, type: 3}
       propertyPath: m_LocalScale.y
@@ -11861,6 +11925,83 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.693161, y: 3.030238, z: 0.9071064}
   m_Center: {x: 0.008148193, y: 1.015119, z: -0.0464468}
+--- !u!1001 &640218155
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1830059992}
+    m_Modifications:
+    - target: {fileID: 4912780738564130280, guid: 7c0739a4cfdf4f1c8e93fa9067a4a587, type: 3}
+      propertyPath: m_Name
+      value: Baketball Hoop Yellow
+      objectReference: {fileID: 0}
+    - target: {fileID: 5721371023162433362, guid: 7c0739a4cfdf4f1c8e93fa9067a4a587, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5721371023162433362, guid: 7c0739a4cfdf4f1c8e93fa9067a4a587, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -15.860001
+      objectReference: {fileID: 0}
+    - target: {fileID: 5721371023162433362, guid: 7c0739a4cfdf4f1c8e93fa9067a4a587, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.41785526
+      objectReference: {fileID: 0}
+    - target: {fileID: 5721371023162433362, guid: 7c0739a4cfdf4f1c8e93fa9067a4a587, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.9622376
+      objectReference: {fileID: 0}
+    - target: {fileID: 5721371023162433362, guid: 7c0739a4cfdf4f1c8e93fa9067a4a587, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5721371023162433362, guid: 7c0739a4cfdf4f1c8e93fa9067a4a587, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5721371023162433362, guid: 7c0739a4cfdf4f1c8e93fa9067a4a587, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5721371023162433362, guid: 7c0739a4cfdf4f1c8e93fa9067a4a587, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5721371023162433362, guid: 7c0739a4cfdf4f1c8e93fa9067a4a587, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5721371023162433362, guid: 7c0739a4cfdf4f1c8e93fa9067a4a587, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5721371023162433362, guid: 7c0739a4cfdf4f1c8e93fa9067a4a587, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7c0739a4cfdf4f1c8e93fa9067a4a587, type: 3}
+--- !u!33 &640218156 stripped
+MeshFilter:
+  m_CorrespondingSourceObject: {fileID: 1621864933395692294, guid: 7c0739a4cfdf4f1c8e93fa9067a4a587, type: 3}
+  m_PrefabInstance: {fileID: 640218155}
+  m_PrefabAsset: {fileID: 0}
+--- !u!33 &640218157 stripped
+MeshFilter:
+  m_CorrespondingSourceObject: {fileID: 7513768351823280778, guid: 7c0739a4cfdf4f1c8e93fa9067a4a587, type: 3}
+  m_PrefabInstance: {fileID: 640218155}
+  m_PrefabAsset: {fileID: 0}
+--- !u!33 &640218158 stripped
+MeshFilter:
+  m_CorrespondingSourceObject: {fileID: 418267394727444039, guid: 7c0739a4cfdf4f1c8e93fa9067a4a587, type: 3}
+  m_PrefabInstance: {fileID: 640218155}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &640218159 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5721371023162433362, guid: 7c0739a4cfdf4f1c8e93fa9067a4a587, type: 3}
+  m_PrefabInstance: {fileID: 640218155}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &643006890
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12103,7 +12244,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 87062987488536273, guid: 94d9a1cd8c62437f8e1babdedeafcf02, type: 3}
       propertyPath: m_RootOrder
-      value: 52
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 87062987488536273, guid: 94d9a1cd8c62437f8e1babdedeafcf02, type: 3}
       propertyPath: m_LocalScale.y
@@ -12786,9 +12927,15 @@ MonoBehaviour:
   groundClip: {fileID: 8300000, guid: 5a9a17495265575428aa3967edbfc3c9, type: 3}
   rimClip: {fileID: 8300000, guid: 16755e6e0e6cb5e4bb0a536bf157efd7, type: 3}
   boardClip: {fileID: 8300000, guid: 398e862009cfc064c954ef3c40b542b8, type: 3}
+  scoreClip: {fileID: 8300000, guid: 9d3a4daeee50bed4bb6281f8df1949dd, type: 3}
+  netClip: {fileID: 8300000, guid: 6a2b69fe27927f240ad6308e221d1f13, type: 3}
   groundTag: ground
   rimTag: rim
   boardTag: board
+  scoreTag: score
+  netTag: net
+  leftController: {fileID: 359612164}
+  rightController: {fileID: 816858896}
   useVelocity: 1
   minVelocity: 0
   maxVelocity: 2
@@ -13276,6 +13423,129 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5055528016559177204, guid: c29a163ed3ff4af48d6fa13e6f5c1e3a, type: 3}
   m_PrefabInstance: {fileID: 763446091}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &769174133
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 769174134}
+  - component: {fileID: 769174137}
+  - component: {fileID: 769174136}
+  - component: {fileID: 769174135}
+  - component: {fileID: 769174138}
+  m_Layer: 0
+  m_Name: Score
+  m_TagString: score
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &769174134
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 769174133}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 3.873, z: 2.091}
+  m_LocalScale: {x: 0.5, y: 0.033782, z: 0.5}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 772838351}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &769174135
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 769174133}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.5000001
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!23 &769174136
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 769174133}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &769174137
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 769174133}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &769174138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 769174133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9586636831765ba4bb017c3640190036, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoopStand: {fileID: 1641231913}
+  hoop: {fileID: 828372452}
+  lattice: {fileID: 1438617630}
+  initialMeshStand: {fileID: 854388936}
+  initialMeshHoop: {fileID: 854388935}
+  initialMeshLattice: {fileID: 854388934}
+  meshStand: {fileID: 640218158}
+  meshHoop: {fileID: 640218157}
+  meshLattice: {fileID: 640218156}
+  timeRemaining: 2
+  isActive: 0
+  ballsTag: balls
 --- !u!1 &772324408
 GameObject:
   m_ObjectHideFlags: 0
@@ -13382,7 +13652,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1385346726601073519, guid: 62c59e127b0a44ac8f364bb5646ed5c1, type: 3}
       propertyPath: m_TagString
-      value: ground
+      value: rim
       objectReference: {fileID: 0}
     - target: {fileID: 1505663896705728427, guid: 62c59e127b0a44ac8f364bb5646ed5c1, type: 3}
       propertyPath: m_Enabled
@@ -13390,11 +13660,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4172855558655998571, guid: 62c59e127b0a44ac8f364bb5646ed5c1, type: 3}
       propertyPath: m_TagString
-      value: ground
+      value: net
       objectReference: {fileID: 0}
     - target: {fileID: 4412674008719544697, guid: 62c59e127b0a44ac8f364bb5646ed5c1, type: 3}
       propertyPath: m_TagString
-      value: ground
+      value: board
       objectReference: {fileID: 0}
     - target: {fileID: 5915308429524669627, guid: 62c59e127b0a44ac8f364bb5646ed5c1, type: 3}
       propertyPath: m_Name
@@ -13402,11 +13672,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5915308429524669627, guid: 62c59e127b0a44ac8f364bb5646ed5c1, type: 3}
       propertyPath: m_TagString
-      value: ground
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 6439220585615674881, guid: 62c59e127b0a44ac8f364bb5646ed5c1, type: 3}
       propertyPath: m_RootOrder
-      value: 41
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6439220585615674881, guid: 62c59e127b0a44ac8f364bb5646ed5c1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13803,7 +14073,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6672504196651425747, guid: 11e8d0803b0f4beda9386eb51aec07a4, type: 3}
       propertyPath: m_RootOrder
-      value: 51
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 6672504196651425747, guid: 11e8d0803b0f4beda9386eb51aec07a4, type: 3}
       propertyPath: m_LocalScale.x
@@ -14379,9 +14649,15 @@ MonoBehaviour:
   groundClip: {fileID: 8300000, guid: 5a9a17495265575428aa3967edbfc3c9, type: 3}
   rimClip: {fileID: 8300000, guid: 16755e6e0e6cb5e4bb0a536bf157efd7, type: 3}
   boardClip: {fileID: 8300000, guid: 398e862009cfc064c954ef3c40b542b8, type: 3}
+  scoreClip: {fileID: 8300000, guid: 9d3a4daeee50bed4bb6281f8df1949dd, type: 3}
+  netClip: {fileID: 8300000, guid: 6a2b69fe27927f240ad6308e221d1f13, type: 3}
   groundTag: ground
   rimTag: rim
   boardTag: board
+  scoreTag: score
+  netTag: net
+  leftController: {fileID: 359612164}
+  rightController: {fileID: 816858896}
   useVelocity: 1
   minVelocity: 0
   maxVelocity: 2
@@ -15046,7 +15322,7 @@ Transform:
   - {fileID: 960326521}
   - {fileID: 598413903}
   m_Father: {fileID: 1830059992}
-  m_RootOrder: 19
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &828372452 stripped
 GameObject:
@@ -15071,6 +15347,83 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.9705285, y: 0.15107247, z: 1.2054324}
   m_Center: {x: 0, y: -0.0000004656613, z: -0.11745207}
+--- !u!1001 &854388933
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1830059992}
+    m_Modifications:
+    - target: {fileID: 5915308429524669627, guid: 62c59e127b0a44ac8f364bb5646ed5c1, type: 3}
+      propertyPath: m_Name
+      value: Baketball Hoop Violet
+      objectReference: {fileID: 0}
+    - target: {fileID: 6439220585615674881, guid: 62c59e127b0a44ac8f364bb5646ed5c1, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6439220585615674881, guid: 62c59e127b0a44ac8f364bb5646ed5c1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -15.939995
+      objectReference: {fileID: 0}
+    - target: {fileID: 6439220585615674881, guid: 62c59e127b0a44ac8f364bb5646ed5c1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.9930191
+      objectReference: {fileID: 0}
+    - target: {fileID: 6439220585615674881, guid: 62c59e127b0a44ac8f364bb5646ed5c1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.679206
+      objectReference: {fileID: 0}
+    - target: {fileID: 6439220585615674881, guid: 62c59e127b0a44ac8f364bb5646ed5c1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6439220585615674881, guid: 62c59e127b0a44ac8f364bb5646ed5c1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6439220585615674881, guid: 62c59e127b0a44ac8f364bb5646ed5c1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6439220585615674881, guid: 62c59e127b0a44ac8f364bb5646ed5c1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6439220585615674881, guid: 62c59e127b0a44ac8f364bb5646ed5c1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6439220585615674881, guid: 62c59e127b0a44ac8f364bb5646ed5c1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6439220585615674881, guid: 62c59e127b0a44ac8f364bb5646ed5c1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 62c59e127b0a44ac8f364bb5646ed5c1, type: 3}
+--- !u!33 &854388934 stripped
+MeshFilter:
+  m_CorrespondingSourceObject: {fileID: 5829982472879102291, guid: 62c59e127b0a44ac8f364bb5646ed5c1, type: 3}
+  m_PrefabInstance: {fileID: 854388933}
+  m_PrefabAsset: {fileID: 0}
+--- !u!33 &854388935 stripped
+MeshFilter:
+  m_CorrespondingSourceObject: {fileID: 841723368143293998, guid: 62c59e127b0a44ac8f364bb5646ed5c1, type: 3}
+  m_PrefabInstance: {fileID: 854388933}
+  m_PrefabAsset: {fileID: 0}
+--- !u!33 &854388936 stripped
+MeshFilter:
+  m_CorrespondingSourceObject: {fileID: 4090509752055045367, guid: 62c59e127b0a44ac8f364bb5646ed5c1, type: 3}
+  m_PrefabInstance: {fileID: 854388933}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &854388937 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6439220585615674881, guid: 62c59e127b0a44ac8f364bb5646ed5c1, type: 3}
+  m_PrefabInstance: {fileID: 854388933}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &855700241
 GameObject:
   m_ObjectHideFlags: 0
@@ -15200,7 +15553,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1830059992}
-  m_RootOrder: 11
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
 --- !u!64 &868889631
 MeshCollider:
@@ -15347,6 +15700,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3019200396687833967, guid: c724e9b1a25941bc8d54fe5b17b4a1ba, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: b77f56de337d4668a5ac60bc43bb8c76, type: 3}
     - target: {fileID: 3667802236834306746, guid: c724e9b1a25941bc8d54fe5b17b4a1ba, type: 3}
       propertyPath: m_Name
       value: Bottle Energy Drink A (3)
@@ -15707,9 +16064,15 @@ MonoBehaviour:
   groundClip: {fileID: 8300000, guid: 5a9a17495265575428aa3967edbfc3c9, type: 3}
   rimClip: {fileID: 8300000, guid: 16755e6e0e6cb5e4bb0a536bf157efd7, type: 3}
   boardClip: {fileID: 8300000, guid: 398e862009cfc064c954ef3c40b542b8, type: 3}
+  scoreClip: {fileID: 8300000, guid: 9d3a4daeee50bed4bb6281f8df1949dd, type: 3}
+  netClip: {fileID: 8300000, guid: 6a2b69fe27927f240ad6308e221d1f13, type: 3}
   groundTag: ground
   rimTag: rim
   boardTag: board
+  scoreTag: score
+  netTag: net
+  leftController: {fileID: 359612164}
+  rightController: {fileID: 816858896}
   useVelocity: 1
   minVelocity: 0
   maxVelocity: 2
@@ -17397,6 +17760,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3019200396687833967, guid: c724e9b1a25941bc8d54fe5b17b4a1ba, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: b77f56de337d4668a5ac60bc43bb8c76, type: 3}
     - target: {fileID: 3667802236834306746, guid: c724e9b1a25941bc8d54fe5b17b4a1ba, type: 3}
       propertyPath: m_Name
       value: Bottle Energy Drink A (7)
@@ -18053,9 +18420,15 @@ MonoBehaviour:
   groundClip: {fileID: 8300000, guid: 5a9a17495265575428aa3967edbfc3c9, type: 3}
   rimClip: {fileID: 8300000, guid: 16755e6e0e6cb5e4bb0a536bf157efd7, type: 3}
   boardClip: {fileID: 8300000, guid: 398e862009cfc064c954ef3c40b542b8, type: 3}
+  scoreClip: {fileID: 8300000, guid: 9d3a4daeee50bed4bb6281f8df1949dd, type: 3}
+  netClip: {fileID: 8300000, guid: 6a2b69fe27927f240ad6308e221d1f13, type: 3}
   groundTag: ground
   rimTag: rim
   boardTag: board
+  scoreTag: score
+  netTag: net
+  leftController: {fileID: 359612164}
+  rightController: {fileID: 816858896}
   useVelocity: 1
   minVelocity: 0
   maxVelocity: 2
@@ -18360,9 +18733,15 @@ MonoBehaviour:
   groundClip: {fileID: 8300000, guid: 5a9a17495265575428aa3967edbfc3c9, type: 3}
   rimClip: {fileID: 8300000, guid: 16755e6e0e6cb5e4bb0a536bf157efd7, type: 3}
   boardClip: {fileID: 8300000, guid: 398e862009cfc064c954ef3c40b542b8, type: 3}
+  scoreClip: {fileID: 8300000, guid: 9d3a4daeee50bed4bb6281f8df1949dd, type: 3}
+  netClip: {fileID: 8300000, guid: 6a2b69fe27927f240ad6308e221d1f13, type: 3}
   groundTag: ground
   rimTag: rim
   boardTag: board
+  scoreTag: score
+  netTag: net
+  leftController: {fileID: 359612164}
+  rightController: {fileID: 816858896}
   useVelocity: 1
   minVelocity: 0
   maxVelocity: 2
@@ -18386,7 +18765,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6672504196651425747, guid: 11e8d0803b0f4beda9386eb51aec07a4, type: 3}
       propertyPath: m_RootOrder
-      value: 57
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 6672504196651425747, guid: 11e8d0803b0f4beda9386eb51aec07a4, type: 3}
       propertyPath: m_LocalScale.x
@@ -19121,9 +19500,15 @@ MonoBehaviour:
   groundClip: {fileID: 8300000, guid: 5a9a17495265575428aa3967edbfc3c9, type: 3}
   rimClip: {fileID: 8300000, guid: 16755e6e0e6cb5e4bb0a536bf157efd7, type: 3}
   boardClip: {fileID: 8300000, guid: 398e862009cfc064c954ef3c40b542b8, type: 3}
+  scoreClip: {fileID: 8300000, guid: 9d3a4daeee50bed4bb6281f8df1949dd, type: 3}
+  netClip: {fileID: 8300000, guid: 6a2b69fe27927f240ad6308e221d1f13, type: 3}
   groundTag: ground
   rimTag: rim
   boardTag: board
+  scoreTag: score
+  netTag: net
+  leftController: {fileID: 359612164}
+  rightController: {fileID: 816858896}
   useVelocity: 1
   minVelocity: 0
   maxVelocity: 2
@@ -19213,7 +19598,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8044372787967921766, guid: 4ed2ea3222e444fa903cc0ee5de73365, type: 3}
       propertyPath: m_RootOrder
-      value: 49
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 8044372787967921766, guid: 4ed2ea3222e444fa903cc0ee5de73365, type: 3}
       propertyPath: m_LocalScale.x
@@ -19368,6 +19753,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 2539812522170571808, guid: b77f56de337d4668a5ac60bc43bb8c76, type: 3}
+    - target: {fileID: 2489294564274531179, guid: 6d205eb65fb446e6b2ac66174454a52e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: b77f56de337d4668a5ac60bc43bb8c76, type: 3}
     - target: {fileID: 3657183391636983812, guid: 6d205eb65fb446e6b2ac66174454a52e, type: 3}
       propertyPath: m_RootOrder
       value: 50
@@ -19728,9 +20117,15 @@ MonoBehaviour:
   groundClip: {fileID: 8300000, guid: 5a9a17495265575428aa3967edbfc3c9, type: 3}
   rimClip: {fileID: 8300000, guid: 16755e6e0e6cb5e4bb0a536bf157efd7, type: 3}
   boardClip: {fileID: 8300000, guid: 398e862009cfc064c954ef3c40b542b8, type: 3}
+  scoreClip: {fileID: 8300000, guid: 9d3a4daeee50bed4bb6281f8df1949dd, type: 3}
+  netClip: {fileID: 8300000, guid: 6a2b69fe27927f240ad6308e221d1f13, type: 3}
   groundTag: ground
   rimTag: rim
   boardTag: board
+  scoreTag: score
+  netTag: net
+  leftController: {fileID: 359612164}
+  rightController: {fileID: 816858896}
   useVelocity: 1
   minVelocity: 0
   maxVelocity: 2
@@ -19748,6 +20143,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 2539812522170571808, guid: b77f56de337d4668a5ac60bc43bb8c76, type: 3}
+    - target: {fileID: 2489294564274531179, guid: 6d205eb65fb446e6b2ac66174454a52e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: b77f56de337d4668a5ac60bc43bb8c76, type: 3}
     - target: {fileID: 3657183391636983812, guid: 6d205eb65fb446e6b2ac66174454a52e, type: 3}
       propertyPath: m_RootOrder
       value: 52
@@ -20216,6 +20615,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3019200396687833967, guid: c724e9b1a25941bc8d54fe5b17b4a1ba, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: b77f56de337d4668a5ac60bc43bb8c76, type: 3}
     - target: {fileID: 3667802236834306746, guid: c724e9b1a25941bc8d54fe5b17b4a1ba, type: 3}
       propertyPath: m_Name
       value: Bottle Energy Drink A (1)
@@ -20576,9 +20979,15 @@ MonoBehaviour:
   groundClip: {fileID: 8300000, guid: 5a9a17495265575428aa3967edbfc3c9, type: 3}
   rimClip: {fileID: 8300000, guid: 16755e6e0e6cb5e4bb0a536bf157efd7, type: 3}
   boardClip: {fileID: 8300000, guid: 398e862009cfc064c954ef3c40b542b8, type: 3}
+  scoreClip: {fileID: 8300000, guid: 9d3a4daeee50bed4bb6281f8df1949dd, type: 3}
+  netClip: {fileID: 8300000, guid: 6a2b69fe27927f240ad6308e221d1f13, type: 3}
   groundTag: ground
   rimTag: rim
   boardTag: board
+  scoreTag: score
+  netTag: net
+  leftController: {fileID: 359612164}
+  rightController: {fileID: 816858896}
   useVelocity: 1
   minVelocity: 0
   maxVelocity: 2
@@ -20981,9 +21390,15 @@ MonoBehaviour:
   groundClip: {fileID: 8300000, guid: 5a9a17495265575428aa3967edbfc3c9, type: 3}
   rimClip: {fileID: 8300000, guid: 16755e6e0e6cb5e4bb0a536bf157efd7, type: 3}
   boardClip: {fileID: 8300000, guid: 398e862009cfc064c954ef3c40b542b8, type: 3}
+  scoreClip: {fileID: 8300000, guid: 9d3a4daeee50bed4bb6281f8df1949dd, type: 3}
+  netClip: {fileID: 8300000, guid: 6a2b69fe27927f240ad6308e221d1f13, type: 3}
   groundTag: ground
   rimTag: rim
   boardTag: board
+  scoreTag: score
+  netTag: net
+  leftController: {fileID: 359612164}
+  rightController: {fileID: 816858896}
   useVelocity: 1
   minVelocity: 0
   maxVelocity: 2
@@ -21632,7 +22047,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8044372787967921766, guid: 4ed2ea3222e444fa903cc0ee5de73365, type: 3}
       propertyPath: m_RootOrder
-      value: 53
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8044372787967921766, guid: 4ed2ea3222e444fa903cc0ee5de73365, type: 3}
       propertyPath: m_LocalScale.x
@@ -21696,6 +22111,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3019200396687833967, guid: c724e9b1a25941bc8d54fe5b17b4a1ba, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: b77f56de337d4668a5ac60bc43bb8c76, type: 3}
     - target: {fileID: 3667802236834306746, guid: c724e9b1a25941bc8d54fe5b17b4a1ba, type: 3}
       propertyPath: m_Name
       value: Bottle Energy Drink A (4)
@@ -22592,9 +23011,15 @@ MonoBehaviour:
   groundClip: {fileID: 8300000, guid: 5a9a17495265575428aa3967edbfc3c9, type: 3}
   rimClip: {fileID: 8300000, guid: 16755e6e0e6cb5e4bb0a536bf157efd7, type: 3}
   boardClip: {fileID: 8300000, guid: 398e862009cfc064c954ef3c40b542b8, type: 3}
+  scoreClip: {fileID: 8300000, guid: 9d3a4daeee50bed4bb6281f8df1949dd, type: 3}
+  netClip: {fileID: 8300000, guid: 6a2b69fe27927f240ad6308e221d1f13, type: 3}
   groundTag: ground
   rimTag: rim
   boardTag: board
+  scoreTag: score
+  netTag: net
+  leftController: {fileID: 359612164}
+  rightController: {fileID: 816858896}
   useVelocity: 1
   minVelocity: 0
   maxVelocity: 2
@@ -23633,6 +24058,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 2539812522170571808, guid: b77f56de337d4668a5ac60bc43bb8c76, type: 3}
+    - target: {fileID: 2489294564274531179, guid: 6d205eb65fb446e6b2ac66174454a52e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: b77f56de337d4668a5ac60bc43bb8c76, type: 3}
     - target: {fileID: 3657183391636983812, guid: 6d205eb65fb446e6b2ac66174454a52e, type: 3}
       propertyPath: m_RootOrder
       value: 51
@@ -23993,9 +24422,15 @@ MonoBehaviour:
   groundClip: {fileID: 8300000, guid: 5a9a17495265575428aa3967edbfc3c9, type: 3}
   rimClip: {fileID: 8300000, guid: 16755e6e0e6cb5e4bb0a536bf157efd7, type: 3}
   boardClip: {fileID: 8300000, guid: 398e862009cfc064c954ef3c40b542b8, type: 3}
+  scoreClip: {fileID: 8300000, guid: 9d3a4daeee50bed4bb6281f8df1949dd, type: 3}
+  netClip: {fileID: 8300000, guid: 6a2b69fe27927f240ad6308e221d1f13, type: 3}
   groundTag: ground
   rimTag: rim
   boardTag: board
+  scoreTag: score
+  netTag: net
+  leftController: {fileID: 359612164}
+  rightController: {fileID: 816858896}
   useVelocity: 1
   minVelocity: 0
   maxVelocity: 2
@@ -24642,9 +25077,15 @@ MonoBehaviour:
   groundClip: {fileID: 8300000, guid: 5a9a17495265575428aa3967edbfc3c9, type: 3}
   rimClip: {fileID: 8300000, guid: 16755e6e0e6cb5e4bb0a536bf157efd7, type: 3}
   boardClip: {fileID: 8300000, guid: 398e862009cfc064c954ef3c40b542b8, type: 3}
+  scoreClip: {fileID: 8300000, guid: 9d3a4daeee50bed4bb6281f8df1949dd, type: 3}
+  netClip: {fileID: 8300000, guid: 6a2b69fe27927f240ad6308e221d1f13, type: 3}
   groundTag: ground
   rimTag: rim
   boardTag: board
+  scoreTag: score
+  netTag: net
+  leftController: {fileID: 359612164}
+  rightController: {fileID: 816858896}
   useVelocity: 1
   minVelocity: 0
   maxVelocity: 2
@@ -25133,9 +25574,15 @@ MonoBehaviour:
   groundClip: {fileID: 8300000, guid: 5a9a17495265575428aa3967edbfc3c9, type: 3}
   rimClip: {fileID: 8300000, guid: 16755e6e0e6cb5e4bb0a536bf157efd7, type: 3}
   boardClip: {fileID: 8300000, guid: 398e862009cfc064c954ef3c40b542b8, type: 3}
+  scoreClip: {fileID: 8300000, guid: 9d3a4daeee50bed4bb6281f8df1949dd, type: 3}
+  netClip: {fileID: 8300000, guid: 6a2b69fe27927f240ad6308e221d1f13, type: 3}
   groundTag: ground
   rimTag: rim
   boardTag: board
+  scoreTag: score
+  netTag: net
+  leftController: {fileID: 359612164}
+  rightController: {fileID: 816858896}
   useVelocity: 1
   minVelocity: 0
   maxVelocity: 2
@@ -25239,6 +25686,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1431421100}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1438617630 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4172855558655998571, guid: 62c59e127b0a44ac8f364bb5646ed5c1, type: 3}
+  m_PrefabInstance: {fileID: 772838350}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1441375069
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26081,6 +26533,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 2539812522170571808, guid: b77f56de337d4668a5ac60bc43bb8c76, type: 3}
+    - target: {fileID: 2489294564274531179, guid: 6d205eb65fb446e6b2ac66174454a52e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: b77f56de337d4668a5ac60bc43bb8c76, type: 3}
     - target: {fileID: 3657183391636983812, guid: 6d205eb65fb446e6b2ac66174454a52e, type: 3}
       propertyPath: m_RootOrder
       value: 55
@@ -26269,9 +26725,15 @@ MonoBehaviour:
   groundClip: {fileID: 8300000, guid: 5a9a17495265575428aa3967edbfc3c9, type: 3}
   rimClip: {fileID: 8300000, guid: 16755e6e0e6cb5e4bb0a536bf157efd7, type: 3}
   boardClip: {fileID: 8300000, guid: 398e862009cfc064c954ef3c40b542b8, type: 3}
+  scoreClip: {fileID: 8300000, guid: 9d3a4daeee50bed4bb6281f8df1949dd, type: 3}
+  netClip: {fileID: 8300000, guid: 6a2b69fe27927f240ad6308e221d1f13, type: 3}
   groundTag: ground
   rimTag: rim
   boardTag: board
+  scoreTag: score
+  netTag: net
+  leftController: {fileID: 359612164}
+  rightController: {fileID: 816858896}
   useVelocity: 1
   minVelocity: 0
   maxVelocity: 2
@@ -27493,9 +27955,15 @@ MonoBehaviour:
   groundClip: {fileID: 8300000, guid: 5a9a17495265575428aa3967edbfc3c9, type: 3}
   rimClip: {fileID: 8300000, guid: 16755e6e0e6cb5e4bb0a536bf157efd7, type: 3}
   boardClip: {fileID: 8300000, guid: 398e862009cfc064c954ef3c40b542b8, type: 3}
+  scoreClip: {fileID: 8300000, guid: 9d3a4daeee50bed4bb6281f8df1949dd, type: 3}
+  netClip: {fileID: 8300000, guid: 6a2b69fe27927f240ad6308e221d1f13, type: 3}
   groundTag: ground
   rimTag: rim
   boardTag: board
+  scoreTag: score
+  netTag: net
+  leftController: {fileID: 359612164}
+  rightController: {fileID: 816858896}
   useVelocity: 1
   minVelocity: 0
   maxVelocity: 2
@@ -28284,9 +28752,15 @@ MonoBehaviour:
   groundClip: {fileID: 8300000, guid: 5a9a17495265575428aa3967edbfc3c9, type: 3}
   rimClip: {fileID: 8300000, guid: 16755e6e0e6cb5e4bb0a536bf157efd7, type: 3}
   boardClip: {fileID: 8300000, guid: 398e862009cfc064c954ef3c40b542b8, type: 3}
+  scoreClip: {fileID: 8300000, guid: 9d3a4daeee50bed4bb6281f8df1949dd, type: 3}
+  netClip: {fileID: 8300000, guid: 6a2b69fe27927f240ad6308e221d1f13, type: 3}
   groundTag: ground
   rimTag: rim
   boardTag: board
+  scoreTag: score
+  netTag: net
+  leftController: {fileID: 359612164}
+  rightController: {fileID: 816858896}
   useVelocity: 1
   minVelocity: 0
   maxVelocity: 2
@@ -28481,6 +28955,11 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.693161, y: 3.030238, z: 0.9071064}
   m_Center: {x: 0.008148193, y: 1.015119, z: -0.0464468}
+--- !u!1 &1641231913 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4412674008719544697, guid: 62c59e127b0a44ac8f364bb5646ed5c1, type: 3}
+  m_PrefabInstance: {fileID: 772838350}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1651357000
 GameObject:
   m_ObjectHideFlags: 0
@@ -30389,6 +30868,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3019200396687833967, guid: c724e9b1a25941bc8d54fe5b17b4a1ba, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: b77f56de337d4668a5ac60bc43bb8c76, type: 3}
     - target: {fileID: 3667802236834306746, guid: c724e9b1a25941bc8d54fe5b17b4a1ba, type: 3}
       propertyPath: m_Name
       value: Bottle Energy Drink A
@@ -30749,9 +31232,15 @@ MonoBehaviour:
   groundClip: {fileID: 8300000, guid: 5a9a17495265575428aa3967edbfc3c9, type: 3}
   rimClip: {fileID: 8300000, guid: 16755e6e0e6cb5e4bb0a536bf157efd7, type: 3}
   boardClip: {fileID: 8300000, guid: 398e862009cfc064c954ef3c40b542b8, type: 3}
+  scoreClip: {fileID: 8300000, guid: 9d3a4daeee50bed4bb6281f8df1949dd, type: 3}
+  netClip: {fileID: 8300000, guid: 6a2b69fe27927f240ad6308e221d1f13, type: 3}
   groundTag: ground
   rimTag: rim
   boardTag: board
+  scoreTag: score
+  netTag: net
+  leftController: {fileID: 359612164}
+  rightController: {fileID: 816858896}
   useVelocity: 1
   minVelocity: 0
   maxVelocity: 2
@@ -30866,6 +31355,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 2539812522170571808, guid: b77f56de337d4668a5ac60bc43bb8c76, type: 3}
+    - target: {fileID: 2489294564274531179, guid: 6d205eb65fb446e6b2ac66174454a52e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: b77f56de337d4668a5ac60bc43bb8c76, type: 3}
     - target: {fileID: 3657183391636983812, guid: 6d205eb65fb446e6b2ac66174454a52e, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -31226,9 +31719,15 @@ MonoBehaviour:
   groundClip: {fileID: 8300000, guid: 5a9a17495265575428aa3967edbfc3c9, type: 3}
   rimClip: {fileID: 8300000, guid: 16755e6e0e6cb5e4bb0a536bf157efd7, type: 3}
   boardClip: {fileID: 8300000, guid: 398e862009cfc064c954ef3c40b542b8, type: 3}
+  scoreClip: {fileID: 8300000, guid: 9d3a4daeee50bed4bb6281f8df1949dd, type: 3}
+  netClip: {fileID: 8300000, guid: 6a2b69fe27927f240ad6308e221d1f13, type: 3}
   groundTag: ground
   rimTag: rim
   boardTag: board
+  scoreTag: score
+  netTag: net
+  leftController: {fileID: 359612164}
+  rightController: {fileID: 816858896}
   useVelocity: 1
   minVelocity: 0
   maxVelocity: 2
@@ -31456,13 +31955,16 @@ Transform:
   - {fileID: 1076864229}
   - {fileID: 1653994330}
   - {fileID: 1659885337}
+  - {fileID: 640218159}
+  - {fileID: 854388937}
   - {fileID: 772838351}
   - {fileID: 51207517}
+  - {fileID: 868889630}
+  - {fileID: 817058163}
   - {fileID: 1841108559}
   - {fileID: 1891053445}
   - {fileID: 1863215731}
   - {fileID: 374569096}
-  - {fileID: 868889630}
   - {fileID: 256894523}
   - {fileID: 1046070231}
   - {fileID: 460146869}
@@ -31470,7 +31972,6 @@ Transform:
   - {fileID: 658522676}
   - {fileID: 1231738353}
   - {fileID: 64420112}
-  - {fileID: 817058163}
   - {fileID: 2006404453}
   - {fileID: 1009649042}
   - {fileID: 605351266}
@@ -31494,7 +31995,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4490029980353872991, guid: dc0035db110b4536abd497c554f2d3c5, type: 3}
       propertyPath: m_RootOrder
-      value: 43
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4490029980353872991, guid: dc0035db110b4536abd497c554f2d3c5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -31560,7 +32061,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8044372787967921766, guid: 4ed2ea3222e444fa903cc0ee5de73365, type: 3}
       propertyPath: m_RootOrder
-      value: 45
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 8044372787967921766, guid: 4ed2ea3222e444fa903cc0ee5de73365, type: 3}
       propertyPath: m_LocalScale.x
@@ -31934,9 +32435,15 @@ MonoBehaviour:
   groundClip: {fileID: 8300000, guid: 5a9a17495265575428aa3967edbfc3c9, type: 3}
   rimClip: {fileID: 8300000, guid: 16755e6e0e6cb5e4bb0a536bf157efd7, type: 3}
   boardClip: {fileID: 8300000, guid: 398e862009cfc064c954ef3c40b542b8, type: 3}
+  scoreClip: {fileID: 8300000, guid: 9d3a4daeee50bed4bb6281f8df1949dd, type: 3}
+  netClip: {fileID: 8300000, guid: 6a2b69fe27927f240ad6308e221d1f13, type: 3}
   groundTag: ground
   rimTag: rim
   boardTag: board
+  scoreTag: score
+  netTag: net
+  leftController: {fileID: 359612164}
+  rightController: {fileID: 816858896}
   useVelocity: 1
   minVelocity: 0
   maxVelocity: 2
@@ -32225,7 +32732,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6850351787054553399, guid: 623cf9a645f7417691e05e1eddf3cd3d, type: 3}
       propertyPath: m_RootOrder
-      value: 44
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 6850351787054553399, guid: 623cf9a645f7417691e05e1eddf3cd3d, type: 3}
       propertyPath: m_LocalScale.x
@@ -33609,6 +34116,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 2539812522170571808, guid: b77f56de337d4668a5ac60bc43bb8c76, type: 3}
+    - target: {fileID: 2489294564274531179, guid: 6d205eb65fb446e6b2ac66174454a52e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: b77f56de337d4668a5ac60bc43bb8c76, type: 3}
     - target: {fileID: 3657183391636983812, guid: 6d205eb65fb446e6b2ac66174454a52e, type: 3}
       propertyPath: m_RootOrder
       value: 49
@@ -33969,9 +34480,15 @@ MonoBehaviour:
   groundClip: {fileID: 8300000, guid: 5a9a17495265575428aa3967edbfc3c9, type: 3}
   rimClip: {fileID: 8300000, guid: 16755e6e0e6cb5e4bb0a536bf157efd7, type: 3}
   boardClip: {fileID: 8300000, guid: 398e862009cfc064c954ef3c40b542b8, type: 3}
+  scoreClip: {fileID: 8300000, guid: 9d3a4daeee50bed4bb6281f8df1949dd, type: 3}
+  netClip: {fileID: 8300000, guid: 6a2b69fe27927f240ad6308e221d1f13, type: 3}
   groundTag: ground
   rimTag: rim
   boardTag: board
+  scoreTag: score
+  netTag: net
+  leftController: {fileID: 359612164}
+  rightController: {fileID: 816858896}
   useVelocity: 1
   minVelocity: 0
   maxVelocity: 2
@@ -34337,7 +34854,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6968120330087252607, guid: 57eefa523cc14133805804e68c78ab86, type: 3}
       propertyPath: m_RootOrder
-      value: 56
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 6968120330087252607, guid: 57eefa523cc14133805804e68c78ab86, type: 3}
       propertyPath: m_LocalScale.y
@@ -35234,6 +35751,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3019200396687833967, guid: c724e9b1a25941bc8d54fe5b17b4a1ba, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: b77f56de337d4668a5ac60bc43bb8c76, type: 3}
     - target: {fileID: 3667802236834306746, guid: c724e9b1a25941bc8d54fe5b17b4a1ba, type: 3}
       propertyPath: m_Name
       value: Bottle Energy Drink A (5)
@@ -35706,9 +36227,15 @@ MonoBehaviour:
   groundClip: {fileID: 8300000, guid: 5a9a17495265575428aa3967edbfc3c9, type: 3}
   rimClip: {fileID: 8300000, guid: 16755e6e0e6cb5e4bb0a536bf157efd7, type: 3}
   boardClip: {fileID: 8300000, guid: 398e862009cfc064c954ef3c40b542b8, type: 3}
+  scoreClip: {fileID: 8300000, guid: 9d3a4daeee50bed4bb6281f8df1949dd, type: 3}
+  netClip: {fileID: 8300000, guid: 6a2b69fe27927f240ad6308e221d1f13, type: 3}
   groundTag: ground
   rimTag: rim
   boardTag: board
+  scoreTag: score
+  netTag: net
+  leftController: {fileID: 359612164}
+  rightController: {fileID: 816858896}
   useVelocity: 1
   minVelocity: 0
   maxVelocity: 2

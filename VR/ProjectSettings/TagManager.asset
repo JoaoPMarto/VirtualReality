@@ -11,6 +11,8 @@ TagManager:
   - board
   - rim
   - ground
+  - score
+  - net
   layers:
   - Default
   - TransparentFX
