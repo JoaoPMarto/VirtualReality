@@ -8,6 +8,9 @@ TagManager:
   - Right Hand
   - balls
   - Bubble
+  - board
+  - rim
+  - ground
   layers:
   - Default
   - TransparentFX

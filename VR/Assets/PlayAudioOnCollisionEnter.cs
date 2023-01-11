@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class PlayAudioOnCollisionEnter : MonoBehaviour
 {
-    public AudioClip clip;
     private AudioSource source;
-    public string targetTag;
+	public AudioClip groundClip;
+    public AudioClip rimClip;
+	public AudioClip boardClip;
+    public string groundTag;
+	public string rimTag;
+	public string boardTag;
 
     public bool useVelocity = true;
     public float minVelocity = 0;  
@@ -23,7 +27,7 @@ public class PlayAudioOnCollisionEnter : MonoBehaviour
     }
 
     private void OnCollisionEnter(Collision collision){
-        if(collision.collider.CompareTag(targetTag))
+        if(collision.collider.CompareTag(groundTag))
         {
             VelocityEstimator estimator = collision.collider.GetComponent<VelocityEstimator>();
             if(estimator && useVelocity){
@@ -32,13 +36,47 @@ public class PlayAudioOnCollisionEnter : MonoBehaviour
                 if(randomizePitch){
                     source.pitch = Random.Range(minPitch, maxPitch);
                 }
-                source.PlayOneShot(clip, volume);
+                source.PlayOneShot(groundClip, volume);
             }
             else{
                 if(randomizePitch){
                     source.pitch = Random.Range(minPitch, maxPitch);
                 }
-                source.PlayOneShot(clip);
+                source.PlayOneShot(groundClip);
+            }
+        } else if(collision.collider.CompareTag(rimTag))
+        {
+            VelocityEstimator estimator = collision.collider.GetComponent<VelocityEstimator>();
+            if(estimator && useVelocity){
+                float v = estimator.GetVelocityEstimate().magnitude;
+                float volume = Mathf.InverseLerp(minVelocity, maxVelocity, v);
+                if(randomizePitch){
+                    source.pitch = Random.Range(minPitch, maxPitch);
+                }
+                source.PlayOneShot(rimClip, volume);
+            }
+            else{
+                if(randomizePitch){
+                    source.pitch = Random.Range(minPitch, maxPitch);
+                }
+                source.PlayOneShot(rimClip);
+            }
+        } else if(collision.collider.CompareTag(boardTag))
+        {
+            VelocityEstimator estimator = collision.collider.GetComponent<VelocityEstimator>();
+            if(estimator && useVelocity){
+                float v = estimator.GetVelocityEstimate().magnitude;
+                float volume = Mathf.InverseLerp(minVelocity, maxVelocity, v);
+                if(randomizePitch){
+                    source.pitch = Random.Range(minPitch, maxPitch);
+                }
+                source.PlayOneShot(boardClip, volume);
+            }
+            else{
+                if(randomizePitch){
+                    source.pitch = Random.Range(minPitch, maxPitch);
+                }
+                source.PlayOneShot(boardClip);
             }
         }
     }
