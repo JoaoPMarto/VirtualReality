@@ -1272,7 +1272,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1830059992}
-  m_RootOrder: 6
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
 --- !u!64 &51207518
 MeshCollider:
@@ -7214,9 +7214,9 @@ GameObject:
   - component: {fileID: 406621331}
   - component: {fileID: 406621330}
   - component: {fileID: 406621329}
-  - component: {fileID: 406621332}
   - component: {fileID: 406621333}
   - component: {fileID: 406621334}
+  - component: {fileID: 406621335}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -7302,21 +7302,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 406621327}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &406621332
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 406621327}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c389c5be56c73a544b0588c4acc615b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: 398e862009cfc064c954ef3c40b542b8, type: 3}
-  source: {fileID: 0}
-  targetTag: balls
 --- !u!82 &406621333
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7429,6 +7414,26 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &406621335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 406621327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04093fe50d695484b8fe383b141f3e5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: 398e862009cfc064c954ef3c40b542b8, type: 3}
+  targetTag: balls
+  useVelocity: 1
+  minVelocity: 0
+  maxVelocity: 2
+  randomizePitch: 1
+  minPitch: 0.8
+  maxPitch: 1.2
 --- !u!1001 &409042657
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14605,7 +14610,7 @@ Transform:
   - {fileID: 960326521}
   - {fileID: 598413903}
   m_Father: {fileID: 1830059992}
-  m_RootOrder: 19
+  m_RootOrder: 59
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &828372452 stripped
 GameObject:
@@ -14870,7 +14875,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1830059992}
-  m_RootOrder: 11
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
 --- !u!64 &868889631
 MeshCollider:
@@ -15947,7 +15952,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1830059992}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &914969164
 MeshCollider:
@@ -19320,7 +19325,7 @@ Transform:
   - {fileID: 911762235}
   - {fileID: 2081443452}
   m_Father: {fileID: 1830059992}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1083160481
 GameObject:
@@ -27345,7 +27350,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1830059992}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &1653994331
 MeshCollider:
@@ -27627,7 +27632,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1830059992}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &1659885338
 MeshCollider:
@@ -30224,18 +30229,18 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1105719339}
   - {fileID: 2010639089}
   - {fileID: 914969163}
   - {fileID: 1076864229}
   - {fileID: 1653994330}
-  - {fileID: 1659885337}
   - {fileID: 772838351}
-  - {fileID: 51207517}
+  - {fileID: 1659885337}
   - {fileID: 1841108559}
   - {fileID: 1891053445}
   - {fileID: 1863215731}
   - {fileID: 374569096}
-  - {fileID: 868889630}
+  - {fileID: 51207517}
   - {fileID: 256894523}
   - {fileID: 1046070231}
   - {fileID: 460146869}
@@ -30243,7 +30248,7 @@ Transform:
   - {fileID: 658522676}
   - {fileID: 1231738353}
   - {fileID: 64420112}
-  - {fileID: 817058163}
+  - {fileID: 868889630}
   - {fileID: 2006404453}
   - {fileID: 1009649042}
   - {fileID: 605351266}
@@ -30283,6 +30288,7 @@ Transform:
   - {fileID: 362937655}
   - {fileID: 1502926269}
   - {fileID: 2095154149}
+  - {fileID: 817058163}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
