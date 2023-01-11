@@ -44,7 +44,7 @@ public class CylinderSelector : MonoBehaviour
         if (activeColliders.Count == 0) return null;
 
         Collider best = null;
-        float minDot = 2;
+        float minDot = float.PositiveInfinity;
 
         foreach (Collider collider in activeColliders)
         {

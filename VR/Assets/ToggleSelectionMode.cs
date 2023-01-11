@@ -27,15 +27,15 @@ public class ToggleSelectionMode : MonoBehaviour
     {
         // Set all components in the controller objects to enabled/disabled
         foreach (var component in rightHand.GetComponents<Behaviour>())
-            component.enabled = !isDirect;
-        foreach (var component in bubble.GetComponents<Behaviour>())
             component.enabled = isDirect;
+        foreach (var component in bubble.GetComponents<Behaviour>())
+            component.enabled = !isDirect;
 
         // Enable/disable all their children
         foreach (Transform t in rightHand.transform)
-            t.gameObject.SetActive(!isDirect);
-        foreach (Transform t in bubble.transform)
             t.gameObject.SetActive(isDirect);
+        foreach (Transform t in bubble.transform)
+            t.gameObject.SetActive(!isDirect);
 
     }
 
