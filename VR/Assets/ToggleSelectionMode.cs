@@ -17,6 +17,8 @@ public class ToggleSelectionMode : MonoBehaviour
     public GameObject rightTeleport;
     public GameObject leftTeleport;
 
+    public GameObject origin;
+
     public bool isDirect = false;
     public bool isCanvas = false;
 
@@ -61,6 +63,13 @@ public class ToggleSelectionMode : MonoBehaviour
 
     public void setComponentsCanvas()
     {
+        if(isCanvas)
+        {
+            origin.GetComponent<ActivateTeleportationRay>().enabled = false;
+        } else
+        {
+            origin.GetComponent<ActivateTeleportationRay>().enabled = true;
+        }
         canvas.SetActive(isCanvas);
         // Set all components in the controller objects to enabled/disabled
         foreach (var component in leftTeleport.GetComponents<Behaviour>())
