@@ -53,7 +53,7 @@ public class PlayAudioOnCollisionEnter : MonoBehaviour
                 if(randomizePitch){
                     source.pitch = Random.Range(minPitch, maxPitch);
                 }
-                source.PlayOneShot(groundClip);
+                source.PlayOneShot(groundClip, 5);
             }
         } else if(collision.collider.CompareTag(rimTag))
         {
@@ -72,7 +72,7 @@ public class PlayAudioOnCollisionEnter : MonoBehaviour
                 if(randomizePitch){
                     source.pitch = Random.Range(minPitch, maxPitch);
                 }
-                source.PlayOneShot(rimClip);
+                source.PlayOneShot(rimClip, 5);
             }
         } else if(collision.collider.CompareTag(boardTag))
         {
@@ -91,7 +91,7 @@ public class PlayAudioOnCollisionEnter : MonoBehaviour
                 if(randomizePitch){
                     source.pitch = Random.Range(minPitch, maxPitch);
                 }
-                source.PlayOneShot(boardClip);
+                source.PlayOneShot(boardClip, 5);
             }
         } else if(collision.collider.CompareTag(netTag))
         {
@@ -108,7 +108,7 @@ public class PlayAudioOnCollisionEnter : MonoBehaviour
                 if(randomizePitch){
                     source.pitch = Random.Range(minPitch, maxPitch);
                 }
-                source.PlayOneShot(netClip);
+                source.PlayOneShot(netClip, 5);
             }
         }
     }
@@ -130,7 +130,7 @@ public class PlayAudioOnCollisionEnter : MonoBehaviour
                 if(randomizePitch){
                     source.pitch = Random.Range(minPitch, maxPitch);
                 }
-                source.PlayOneShot(scoreClip);
+                source.PlayOneShot(scoreClip, 5);
             }
         } 
 	}
