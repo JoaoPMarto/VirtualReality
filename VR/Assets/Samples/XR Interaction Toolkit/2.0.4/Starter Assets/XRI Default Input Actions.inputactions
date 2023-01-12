@@ -1088,7 +1088,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "B",
+                    "name": "ToggleSliders",
                     "type": "Button",
                     "id": "2955f3c0-9b09-4fed-b98b-057fb97cee22",
                     "expectedControlType": "Button",
@@ -1121,11 +1121,11 @@
                 {
                     "name": "",
                     "id": "d859ffe0-b124-4e06-b82e-7a5d698317fa",
-                    "path": "",
+                    "path": "<XRController>{RightHand}/secondaryButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "B",
+                    "action": "ToggleSliders",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
